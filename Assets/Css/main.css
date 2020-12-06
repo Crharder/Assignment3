@@ -1,0 +1,207 @@
+:root{
+    --light-grey: #F1F3FF;
+    --navbar-green: #1a1a00;
+    --navbar-font: #cdc884;
+    --fontshadow-green: #23790c;
+}
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-image: url('/Assets/Images/forest-931706_1920%20(1).jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+/* Side navigation bar styling */
+.sidebar {
+    height: 100%;
+    width: 130px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--navbar-green); 
+    overflow-x: hidden;
+    padding-top: 30px;
+    opacity: 95%;
+    }
+
+.sidebar a {
+    padding: 6px 8px 26px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--navbar-font); 
+    display: block;
+}
+
+.sidebar a:hover {
+  color: var(--light-grey);
+}
+/* End of side navigation bar styling */
+
+/* intro stlying */
+.intro{
+    margin-top:10%;
+    text-align: center;
+    font-size: 45px;
+    text-shadow: 1px 1px var(--fontshadow-green);
+}
+
+#name{
+    font-size: 85px;
+    margin-bottom: 1%;
+}
+
+/* end of intro styling */
+/* video stlying  */
+video{
+    border-radius: 15px;
+    max-width:100%; 
+    margin-left: 37.5%;
+    margin-top: 2%
+}
+
+/* thankyou message styling */
+#thankyou{
+    margin-top:2%;
+    text-align: center;
+    font-size: 35px;
+    text-shadow: 1px 1px var(--fontshadow-green); 
+}
+/* end of thankyou message styling */
+
+/* resume page styling */
+#center-grid{
+    align-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--navbar-green);
+    grid-gap: 15%;
+    width:auto;
+    max-height: 100%;
+    height: 425px;
+    color: var(--navbar-font);
+    margin-top: 1%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 1%;
+    border-radius: 50px;
+    opacity: 95%;
+}
+
+#center-grid > div{
+    text-align: center;
+    margin-left: 5%;
+    margin-right:5%;
+}
+
+h4{
+    margin-bottom: 2%;
+    font-size: 20px;
+}
+
+.resume-headers{
+    text-align: center;
+    margin-top: 2%;
+    font-size: 35px;
+    text-shadow: 1px 1px var(--fontshadow-green);
+}
+/* end of resume page styling */
+
+/* Contact form styling */
+.form-upper-inputs{
+    width:50%;
+    padding: 12px 20px;
+    margin: 2%;
+    box-sizing: content-box;
+    background-color: gray;
+    color: var(--navbar-font);
+    border-color: black;
+    border-radius: 5px;
+    outline-color: var(--navbar-font);
+}
+
+.form-lower-input{
+    width:50%;
+    height:200px;
+    padding: 12px 20px;
+    box-sizing:content-box;
+    margin: 8px 0;
+    background-color: gray;
+    color: var(--navbar-font);
+    border-color: black;
+    border-radius: 5px;
+    outline-color: var(--navbar-font);
+    border-width:2px;
+}
+
+.contact-form{
+    text-align: center;
+}
+
+.container {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    border-color: black;
+    opacity: 90%
+}
+
+#contact-header{
+    color: var(--navbar-green);
+    margin-top: 5%; 
+    font-size: 50px;
+    text-shadow: 1px 1px var(--fontshadow-green);
+}
+
+::placeholder { 
+  color: var(--navbar-green);
+  opacity: 1; 
+}
+
+input[type = submit], input[type = reset] {
+    text-align: center;
+    width: 80px;
+    height: 30px;
+    background-color: var(--navbar-green);
+    border-radius: 8px;
+    border: 0px;
+    color: var(--navbar-font);
+}
+
+/* End of contact form styling */
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+  }
+    .sidebar a {float: left;}
+
+    .contact-form{
+        width: 100%;
+        padding: 0;   
+    }
+
+    video{
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #center-grid{
+        display: inline-block;
+        text-align: center;
+    }
+    
+    #center-grid div {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+}
+
